@@ -1,3 +1,58 @@
+* {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
 .List {
-  background: red;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  justify-items: center;
+}
+
+.Search {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Search form {
+  margin: 10px;
+}
+
+.Search form input {
+  width: 200px;
+  height: 24px;
+  margin-top: 10px;
+  border: 1px solid beige;
+  border-radius: 10px;
+}
+
+.Search form input:focus {
+  outline: none;
+}
+
+.Search form input::placeholder {
+  margin-left: 20px;
+}
+
+@media screen and (min-width: 500px) {
+  .List {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .Search form input {
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 940px) {
+  .List {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .Search form input {
+    width: 450px;
+    margin: 20px 0;
+  }
 }

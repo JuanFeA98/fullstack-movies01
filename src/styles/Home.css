@@ -1,0 +1,10 @@
+.Home {
+  background: rgb(176, 223, 218);
+  background: linear-gradient(
+    31deg,
+    rgba(176, 223, 218, 1) 27%,
+    rgba(49, 180, 166, 1) 54%,
+    rgba(176, 223, 218, 1) 77%,
+    rgba(49, 180, 166, 1) 100%
+  );
+}
